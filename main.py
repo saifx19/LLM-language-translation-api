@@ -14,8 +14,7 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 model = ChatGroq(model = "gemma2-9b-it", groq_api_key = groq_api_key)
 
 # Define prompt template for translation
-system_template = "Translate the following into {language} and provide only "
-system_template += "the translation"
+system_template = "Translate the following into {language} and provide only the translation"
 prompt_template = ChatPromptTemplate.from_messages([
     ('system', system_template),
     ('user', '{text}')
