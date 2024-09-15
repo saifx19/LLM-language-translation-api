@@ -1,0 +1,9 @@
+langchain
+python-dotenv
+langchain-community
+langchain_groq
+langchain_core
+fastapi[all]
+langserve
+sse_starlette
+pydantic
