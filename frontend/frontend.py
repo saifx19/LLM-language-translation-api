@@ -33,8 +33,7 @@ if st.button("Translate"):
 
         if response.status_code == 200:
             # Display translated text
-            translated_text = response.json().get("output", "Error: Could not"
-                                                  " fetch the translation.")
+            translated_text = response.json().get("output", "Error: Could not fetch the translation.")
             st.write(f"**Translated Text in {target_language}:**")
             st.write(translated_text)
         else:
